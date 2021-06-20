@@ -2,4 +2,7 @@ Instalando o angular cli
 	npm install -g @angular/cli
 
 Exibindo a versão do Angular instalado
-	ng version	
+	ng version
+
+Criando um projeto Angular
+	ng new <nome-projeto>	
