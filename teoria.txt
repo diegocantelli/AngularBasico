@@ -1,2 +1,5 @@
 Instalando o angular cli
-	nom install -g @angular/cli
+	npm install -g @angular/cli
+
+Exibindo a versão do Angular instalado
+	ng version	
