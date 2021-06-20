@@ -1,0 +1,2 @@
+Instalando o angular cli
+	nom install -g @angular/cli
