@@ -9,4 +9,16 @@ Criando um projeto Angular
 
 Executando o projeto
 	Dentro da pasta que possui os arquivos de config json, digitar o comando:
-		- ng serve	
+		- ng serve
+
+
+Componentes
+
+	Os módulos devem ser decorados com o seguinte decorator:
+		@Component({
+    			selector:'app-nova-transferencia',
+    			templateUrl: './nova-transferencia.component.html',
+    			styleUrls: ['./nova-transferencia.component.scss']
+		})
+	Para serem reconhecidos pela aplicação, os componentes devem ser declaracados dentro do array de Declarations
+	do módulo correspondente.
