@@ -40,3 +40,7 @@ NgModel
 		Apenas atualiza o valor armazenado na propriedade(uni direcional - da view para o modelo)
 		Sintaxe:
 			(ngModel)
+
+Criando um componente via angular cli
+	1 - ng generate component <nome-componente>
+	2 - ng g c <nome-componente>

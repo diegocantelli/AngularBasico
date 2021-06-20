@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
+import { ExtratoComponent } from './extrato/extrato.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     // importando um component em imports para poder ser reconhecido pela aplicação
-    NovaTransferenciaComponent
+    NovaTransferenciaComponent,
+    ExtratoComponent
   ],
   imports: [
     BrowserModule,
