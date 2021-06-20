@@ -22,3 +22,21 @@ Componentes
 		})
 	Para serem reconhecidos pela aplicação, os componentes devem ser declaracados dentro do array de Declarations
 	do módulo correspondente.
+
+NgModel
+	Para poder usar NgModel é necessário importar o módulo FormsModule dentro do módulo principal.
+	Exemplo:
+		<input class="form-field__input" id="valor" type="text" [(ngModel)]="valor" name="valor">
+		- É necessário definir de onde o ngModel irá ler e gravar os valores e também definir a propriedade name
+	TwoWay Databind:
+		Lê e grava os valores numa propriedade(bi direcional).
+		Sintaxe:
+			[(ngModel)]
+	Property Bind:
+		Apenas lê o valor armazenado na propriedade(uni direcional - do modelo para a view).
+		Sintaxe:
+			[ngModel]
+	Event Bind:
+		Apenas atualiza o valor armazenado na propriedade(uni direcional - da view para o modelo)
+		Sintaxe:
+			(ngModel)
