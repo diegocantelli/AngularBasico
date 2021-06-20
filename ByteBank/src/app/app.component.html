@@ -1,1 +1,5 @@
-<app-nova-transferencia></app-nova-transferencia>
+<!-- (aoTransferir) -> é um método definido dentro do componente app-nova-transferencia -->
+<!-- transferir($event) -> é o método dentro do componente app.component, que irá receber por parâmetro o valor
+                      que foi emitido pelo output aoTransferir -->
+
+<app-nova-transferencia (aoTransferir)="transferir($event)"></app-nova-transferencia>
