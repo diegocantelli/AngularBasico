@@ -4,7 +4,7 @@
     <th>Valor</th>
     <th>Destino</th>
   </thead>
-  <tbody>
+  <tbody *ngIf="transferencias?.length > 0; else listaVazia">
     <tr *ngFor="let transferencia of transferencias">
       <td>{{ transferencia.data | date:"short"}}</td>
       <td>{{ transferencia.valor | currency }}</td>
@@ -12,3 +12,8 @@
     </tr>
   </tbody>
 </table>
+
+<!-- caso não exista nenhuma transação cadastrada, este bloco será renderizado dentro do tbody -->
+<ng-template #listaVazia>
+  <p>Nenhuma transferência cadastrada</p>
+</ng-template>
