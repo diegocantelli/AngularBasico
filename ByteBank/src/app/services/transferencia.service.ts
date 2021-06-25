@@ -1,6 +1,8 @@
+import { Transferencia } from './../extrato/models/transferencia.model';
 import { AppModule } from './../app.module';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 // @Injectable -> indica que uma instância desta classe poderá ser injetada no construtor de outras classes
 @Injectable({
@@ -12,6 +14,7 @@ import { HttpClient } from '@angular/common/http';
 export class TransferenciaService {
 
   private listaTransferencia: any[];
+  private url = 'http://localhost:3000/transferencias';
 
   constructor(private httpClient: HttpClient) {
     this.listaTransferencia = [];
@@ -19,6 +22,10 @@ export class TransferenciaService {
 
   get transferencias() {
     return this.listaTransferencia;
+  }
+
+  todas(): Observable<Transferencia[]>{
+    return this.httpClient.get<Transferencia[]>(this.url);
   }
 
   adicionar(transferencia: any){
