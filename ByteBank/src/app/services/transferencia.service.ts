@@ -1,5 +1,6 @@
 import { AppModule } from './../app.module';
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 // @Injectable -> indica que uma instância desta classe poderá ser injetada no construtor de outras classes
 @Injectable({
@@ -12,7 +13,7 @@ export class TransferenciaService {
 
   private listaTransferencia: any[];
 
-  constructor() {
+  constructor(private httpClient: HttpClient) {
     this.listaTransferencia = [];
   }
 
