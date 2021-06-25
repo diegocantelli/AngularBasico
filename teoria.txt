@@ -44,3 +44,9 @@ NgModel
 Criando um componente via angular cli
 	1 - ng generate component <nome-componente>
 	2 - ng g c <nome-componente>
+
+Pacote para mockar os dados de uma API com json-server
+	instalação
+		npm install -g json-server
+	Iniciar o serviço
+		json-server --watch db.json
